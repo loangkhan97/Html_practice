@@ -13,11 +13,15 @@ body{
 }
 
 nav{
-    background: #0082e6;
+    background: #0b4672;
     position: fixed;
     height: 80px;
     width: 100%;
     z-index: 1000;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 label.logo{
@@ -192,7 +196,7 @@ a.active, a:hover{
 }
 
 .hero-image img {
-  width: 220px;
+  width: 400px;
   opacity: 0.9;
   animation: float 3s ease-in-out infinite;
 }
