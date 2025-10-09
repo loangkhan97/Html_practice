@@ -14,8 +14,10 @@ body{
 
 nav{
     background: #0082e6;
+    position: fixed;
     height: 80px;
     width: 100%;
+    z-index: 1000;
 }
 
 label.logo{
