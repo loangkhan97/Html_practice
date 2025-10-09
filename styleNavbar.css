@@ -251,3 +251,101 @@ a.active, a:hover{
     width: 150px;
   }
 }
+
+/* ===== PRODUCTS SECTION ===== */
+.products {
+  padding: 5rem 3rem;
+  background: linear-gradient(135deg, rgba(0,255,255,0.1), rgba(255,0,150,0.1));
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00ffff;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px rgba(0,255,255,0.5);
+}
+
+/* Container for product cards */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual product card */
+.product-card {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 15px;
+  width: 300px;
+  padding: 1.5rem;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Product hover effects */
+.product-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,255,255,0.3);
+}
+
+/* Product image */
+.product-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Product heading */
+.product-card h3 {
+  color: #ffeb3b;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Product text */
+.product-card p {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-bottom: 0.8rem;
+}
+
+/* Star ratings */
+.stars {
+  font-size: 1.2rem;
+  color: #ffcc00;
+}
+
+/* Animation for fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Reuse floating animation from hero */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .product-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 80%;
+  }
+}
