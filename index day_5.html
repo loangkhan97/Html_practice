@@ -101,6 +101,73 @@
   </div>
 </section>
 
+<!-- ====== FAQ SECTION START ====== -->
+<section class="faq-section" id="faq">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <p class="faq-subtitle">Improves customer trust and SEO.</p>
+
+  <div class="faq-container">
+
+    <!-- Question 1 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        🚚 What is the average shipping time?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Our standard shipping time is 3–5 business days within the country and 7–10 business days for international orders. We’ll send you tracking details once your package ships.</p>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        💳 What payment methods do you accept?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>We accept Visa, MasterCard, PayPal, Cash on Delivery, and several local payment options for your convenience. All transactions are encrypted and 100% secure.</p>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        🔁 What is your return & refund policy?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>You can return any unused product within 7 days of delivery for a full refund or replacement. Please make sure to include original packaging and proof of purchase.</p>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        🔐 How do you ensure account and data security?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>We use SSL encryption, secure servers, and multi-layer authentication to protect all user data. You can reset your password anytime from your account dashboard.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ====== FAQ SECTION END ====== -->
+
+<script>
+  // Simple Accordion Toggle
+  const faqItems = document.querySelectorAll(".faq-question");
+  faqItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      const parent = item.parentNode;
+      parent.classList.toggle("active");
+    });
+  });
+</script>
+
+
 <!-- ====== FOOTER SECTION START ====== -->
 <footer class="footer">
   <div class="footer-container">
