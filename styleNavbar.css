@@ -1086,17 +1086,17 @@ a.active, a:hover{
 
 .contact-section {
   padding: 80px 10%;
-  background: linear-gradient(135deg, #0d6efd, #0077ff);
+  background: linear-gradient(135deg, #4f46e5, #3b82f6); /* Matching gradient */
   color: #fff;
   overflow: hidden;
 }
 
 .contact-container {
-  background: #fff;
-  color: #333;
+  background: #ffffff;
+  color: #222;
   border-radius: 20px;
   padding: 50px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   animation: fadeInUp 1s ease;
 }
 
@@ -1106,13 +1106,15 @@ a.active, a:hover{
 }
 
 .contact-header h2 {
-  font-size: 2rem;
-  color: #0d6efd;
+  font-size: 2.2rem;
+  color: #4f46e5; /* Main theme color */
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .contact-header p {
   color: #666;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .contact-content {
@@ -1134,17 +1136,18 @@ a.active, a:hover{
 .form-group textarea {
   width: 100%;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid #ccc;
   outline: none;
   transition: 0.3s ease;
   font-size: 1rem;
+  background-color: #f8f9ff;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #0d6efd;
-  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+  border-color: #4f46e5;
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
 }
 
 textarea {
@@ -1153,18 +1156,20 @@ textarea {
 }
 
 .btn-submit {
-  background: #0d6efd;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
   color: #fff;
   border: none;
   padding: 14px 30px;
   border-radius: 10px;
   cursor: pointer;
   font-weight: 600;
+  letter-spacing: 0.5px;
   transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
 }
 
 .btn-submit:hover {
-  background: #0056d2;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
   transform: scale(1.05);
 }
 
@@ -1174,30 +1179,36 @@ textarea {
 }
 
 .contact-info h3 {
-  color: #0d6efd;
+  color: #4f46e5;
   margin-bottom: 15px;
+  font-size: 1.4rem;
 }
 
 .contact-info p {
   margin: 8px 0;
-  color: #555;
+  color: #444;
+  font-size: 1rem;
 }
 
 .social-links {
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .social-links a {
   display: inline-block;
-  margin-right: 12px;
-  color: #0d6efd;
-  font-size: 1.3rem;
+  margin-right: 15px;
+  color: #4f46e5;
+  font-size: 1.4rem;
   transition: 0.3s ease;
+  background: #eef2ff;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .social-links a:hover {
-  color: #0056d2;
-  transform: scale(1.2);
+  color: #fff;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  transform: scale(1.15);
 }
 
 .map-container {
@@ -1211,7 +1222,7 @@ textarea {
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   100% {
     opacity: 1;
@@ -1227,6 +1238,10 @@ textarea {
 
   .contact-form, .contact-info {
     flex: 1 1 100%;
+  }
+
+  .contact-container {
+    padding: 40px 25px;
   }
 }
 
