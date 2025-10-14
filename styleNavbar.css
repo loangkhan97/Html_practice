@@ -198,13 +198,21 @@ a.active, a:hover{
 .hero-image img {
   width: 400px;
   opacity: 0.9;
-  animation: float 3s ease-in-out infinite;
+  animation: floatRotate 8s linear infinite; /* smooth continuous rotation */
+  transform-origin: center;
 }
 
-/* Floating Animation */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
+/* Floating + Rotation Animation */
+@keyframes floatRotate {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+  }
 }
 
 /* Hero Text */
